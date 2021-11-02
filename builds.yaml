@@ -1,0 +1,14 @@
+docker-images:
+    - dockerfile: Dockerfile
+      context: .
+      triggers:
+        keywords:
+            - '[build]'
+lambda-bundles:
+    - runtime: go1.x
+      cmd: make lambda-bundles
+      triggers:
+        branches:
+            - main
+        keywords:
+            - '[lambda]'

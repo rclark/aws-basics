@@ -34,7 +34,7 @@ github-events-bundle: build-github-events
 github-app-bundle: build-github-app-tokens
 	cd dist && zip github-app.zip github-app-tokens
 
-lambda-bundles: clean github-events-bundle github-app-bundle
+lambda-bundles: clean build-github-events build-github-app-tokens
 
 create-github-app:
 	cd github-app && go run main.go

@@ -3,11 +3,13 @@ module github.com/rclark/aws-basics
 go 1.17
 
 require (
+	github.com/AlecAivazis/survey/v2 v2.3.2
 	github.com/aws/aws-lambda-go v1.27.0
 	github.com/aws/aws-sdk-go-v2 v1.10.0
 	github.com/aws/aws-sdk-go-v2/config v1.8.3
 	github.com/aws/aws-sdk-go-v2/service/cloudwatchevents v1.6.2
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.8.0
+	github.com/aws/aws-sdk-go-v2/service/sts v1.7.2
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/golang/mock v1.6.0
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8
@@ -15,6 +17,7 @@ require (
 	github.com/spf13/cobra v1.2.1
 	github.com/stretchr/testify v1.7.0
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
+	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
 )
 
 require (
@@ -23,12 +26,16 @@ require (
 	github.com/aws/aws-sdk-go-v2/internal/ini v1.2.4 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.3.2 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sso v1.4.2 // indirect
-	github.com/aws/aws-sdk-go-v2/service/sts v1.7.2 // indirect
 	github.com/aws/smithy-go v1.8.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
+	github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51 // indirect
+	github.com/mattn/go-colorable v0.1.2 // indirect
+	github.com/mattn/go-isatty v0.0.8 // indirect
+	github.com/mgutz/ansi v0.0.0-20170206155736-9520e82c474b // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	golang.org/x/sys v0.0.0-20210616045830-e2b7044e8c71 // indirect
-	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
+	golang.org/x/term v0.0.0-20210503060354-a79de5458b56 // indirect
+	golang.org/x/text v0.3.5 // indirect
 )
